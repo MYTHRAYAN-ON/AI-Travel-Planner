@@ -15,7 +15,7 @@ function InfoSection({ trip }) {
           const textSearchResponse = await fetch(
             `https://maps.gomaps.pro/maps/api/place/textsearch/json?query=${encodeURIComponent(
               trip.userSelection.location
-            )}&key=AlzaSytQFKNGxCCW_QiCfdyuOAo-0OMdULotxCX`
+            )}&key=AlzaSy8-8qoDtDuBJLb891NTWMf2lsfSI9n701W`
           );
 
           const textSearchData = await textSearchResponse.json();
@@ -26,7 +26,7 @@ function InfoSection({ trip }) {
 
           if (photoReference) {
             // Construct the Photo API URL
-            const photoUrl = `https://maps.gomaps.pro/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=800&key=AlzaSytQFKNGxCCW_QiCfdyuOAo-0OMdULotxCX`;
+            const photoUrl = `https://maps.gomaps.pro/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=800&key=AlzaSy8-8qoDtDuBJLb891NTWMf2lsfSI9n701W`;
             setCoverPhoto(photoUrl); // Update the cover photo
           }
         } catch (error) {
