@@ -39,10 +39,10 @@ const Footer = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* Get in Touch */}
             <div>
-              <h1 className="font-logo text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight drop-shadow-xl">
+              <h1 className="font-logo text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800 mb-4 leading-tight drop-shadow-xl">
                 Travia
               </h1>
-              <p className="text-gray-600 mb-4 text-sm sm:text-base">
+              <p className="text-slate-700 font-semibold mb-4 text-sm sm:text-base">
                 Discover Your Dream Journey
               </p>
             </div>
@@ -50,14 +50,14 @@ const Footer = () => {
             <div className='flex justify-between'>
               {/* Useful Links */}
               <div>
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+                <h3 className="text-lg sm:text-xl font-semibold text-slate-800 mb-4">
                   Useful Links
                 </h3>
                 <ul className="space-y-2">
                   <li>
                     <a
                       href="/"
-                      className="text-gray-600 hover:text-purple-600 text-sm sm:text-base"
+                      className="text-slate-600 hover:text-purple-600 text-sm sm:text-base"
                     >
                       Home
                     </a>
@@ -65,7 +65,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/#how-it-works"
-                      className="text-gray-600 hover:text-purple-600 text-sm sm:text-base"
+                      className="text-slate-600 hover:text-purple-600 text-sm sm:text-base"
                     >
                       How to use?
                     </a>
@@ -73,7 +73,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/#features"
-                      className="text-gray-600 hover:text-purple-600 text-sm sm:text-base"
+                      className="text-slate-600 hover:text-purple-600 text-sm sm:text-base"
                     >
                       Features
                     </a>
@@ -83,14 +83,14 @@ const Footer = () => {
 
               {/* Help */}
               <div>
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+                <h3 className="text-lg sm:text-xl font-semibold text-slate-700 mb-4">
                   Help
                 </h3>
                 <ul className="space-y-2">
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-purple-600 text-sm sm:text-base"
+                      className="text-slate-600 hover:text-purple-600 text-sm sm:text-base"
                     >
                       FAQ
                     </a>
@@ -98,7 +98,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-purple-600 text-sm sm:text-base"
+                      className="text-slate-600 hover:text-purple-600 text-sm sm:text-base"
                     >
                       Terms &amp; Conditions
                     </a>
@@ -106,7 +106,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-purple-600 text-sm sm:text-base"
+                      className="text-slate-600 hover:text-purple-600 text-sm sm:text-base"
                     >
                       Support Policy
                     </a>

@@ -17,43 +17,44 @@ const Hero = () => {
       {/* Hero Section */}
       <div className="relative h-screen w-full overflow-hidden">
         {/* Background Video */}
-        <video
+        {/* <video
           ref={videoRef}
           className="absolute top-0 left-0 w-full h-full object-cover"
           src="/video.mp4" // Replace with your video path
           autoPlay
           loop
           muted
-        ></video>
+        ></video> */}
+        <img src="/landing_img_2.jpg" alt="" className="absolute top-0 left-0  w-full h-full object-cover"/>
 
         {/* Overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black via-transparent to-black opacity-70"></div>
+        {/* <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black via-transparent to-black opacity-70"></div> */}
 
         {/* Centered Text */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="font-logo text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-xl">
+        <div className="absolute inset-0 flex flex-col mt-10 justify-start items-center text-center px-4 sm:px-6 lg:px-8">
+          <h1 className="font-logo text-6xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-slate-800 mb-6 leading-tight drop-shadow-xl">
             Travia
           </h1>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight drop-shadow-md">
+          <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl  font-semi-bold text-slate-700 mb-6 leading-tight">
             Discover Your Dream Journey
           </h1>
-          <p className="text-base sm:text-lg md:text-2xl text-gray-300 leading-relaxed max-w-2xl">
+          <p className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl">
             Explore the world with AI-powered trip planning. Personalized
             recommendations for hotels, places to visit, and travel insights—all
             in one place.
           </p>
           <Link to={"/create-trip"}>
-            <Button variant="secondary" size="lg" className="mt-6">
+            <button  className="mt-6 px-2 py-2 bg-slate-700 text-white border-transparent  hover:border-slate-900 hover:bg-white hover:text-slate-600 ">
               Get Started, It's Free
-            </Button>
+            </button>
           </Link>
         </div>
-        <div className="absolute bottom-0 left-0 w-full  ">
-          <div className="relative bg-transparent h-[82px] flex items-end text-center  ">
+        {/* <div className="absolute bottom-0 left-0 w-full  ">
+          <div className="relative bg-transparent h-[82px] flex items-end text-center  "> */}
             {/* Wave */}
-            <div className="absolute bottom-0 left-0 w-full h-[80px] bg-[url('https://1.bp.blogspot.com/-NYl6L8pz8B4/XoIVXwfhlNI/AAAAAAAAU3k/nxJKiLT706Mb7jUFiM5vdCsOSNnFAh0yQCLcBGAsYHQ/s1600/hero-wave.png')] bg-cover bg-repeat-x animate-wave "></div>
+            {/* <div className="absolute bottom-0 left-0 w-full h-[80px] bg-[url('https://1.bp.blogspot.com/-NYl6L8pz8B4/XoIVXwfhlNI/AAAAAAAAU3k/nxJKiLT706Mb7jUFiM5vdCsOSNnFAh0yQCLcBGAsYHQ/s1600/hero-wave.png')] bg-cover bg-repeat-x animate-wave "></div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* How It Works Section */}

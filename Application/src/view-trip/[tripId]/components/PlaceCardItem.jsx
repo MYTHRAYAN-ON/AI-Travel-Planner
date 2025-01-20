@@ -40,7 +40,7 @@ function PlaceCardItem({ place }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="border rounded-xl shadow-md p-4 flex flex-col items-start bg-white transition-transform transform hover:scale-105 hover:shadow-lg">
+      <div className="h-full border rounded-xl shadow-md p-4 flex flex-col items-start bg-white transition-transform transform hover:scale-105 hover:shadow-lg">
         {/* Dynamically fetched image */}
         <img
           src={photoUrl}

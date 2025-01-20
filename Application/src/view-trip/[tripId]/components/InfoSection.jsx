@@ -38,6 +38,26 @@ function InfoSection({ trip }) {
     fetchLocationPhoto();
   }, [trip?.userSelection?.location]);
 
+
+  const handleShare = async () => {
+    const currentUrl = window.location.href; // Get the current URL
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: document.title, // Title of the page
+          text: "Check out this plan:",
+          url: currentUrl, // URL to share
+        });
+        alert("URL shared successfully!");
+      } catch (error) {
+        alert("Error sharing the URL:", error);
+      }
+    } else {
+      alert("Your browser does not support the Web Share API.");
+    }
+  };
+
   return (
     <div className="bg-white rounded-xl overflow-hidden">
       {/* Cover Image */}
@@ -73,7 +93,7 @@ function InfoSection({ trip }) {
           </div>
 
           {/* Action Button */}
-          <button className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700">
+          <button onClick={handleShare} className="flex items-center gap-2 px-4 py-2 bg-slate-700 text-white border-transparent  hover:border-slate-900 hover:bg-white hover:text-slate-600">
             <IoIosSend size={20} />
             <span>Send</span>
           </button>

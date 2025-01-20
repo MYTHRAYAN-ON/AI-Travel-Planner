@@ -180,7 +180,7 @@ function CreateTrip() {
         <button
           type="submit"
           disabled={loading} onClick={onGenerateTrip}
-          className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700"
+          className="px-4 py-2 bg-slate-700 text-white border-transparent  hover:border-slate-900 hover:bg-white hover:text-slate-600"
         >
           {loading ? (
             <AiOutlineLoading3Quarters className="h-7 w-7 animate-spin" />
