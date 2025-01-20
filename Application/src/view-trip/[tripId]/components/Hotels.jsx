@@ -16,7 +16,7 @@ function Hotels(trip) {
               const textSearchResponse = await fetch(
                 `https://maps.gomaps.pro/maps/api/place/textsearch/json?query=${encodeURIComponent(
                   hotel.name
-                )}&key=AlzaSy8-8qoDtDuBJLb891NTWMf2lsfSI9n701W`
+                )}&key=AlzaSyJtry_56mqgmBOERW22Nn-omfuLQdeiezJ`
               );
 
               const textSearchData = await textSearchResponse.json();
@@ -25,7 +25,7 @@ function Hotels(trip) {
 
               if (photoReference) {
                 // Construct the Photo API URL
-                updatedPhotos[hotel.name] = `https://maps.gomaps.pro/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=400&key=AlzaSy8-8qoDtDuBJLb891NTWMf2lsfSI9n701W`;
+                updatedPhotos[hotel.name] = `https://maps.gomaps.pro/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=400&key=AlzaSyJtry_56mqgmBOERW22Nn-omfuLQdeiezJ`;
               } else {
                 updatedPhotos[hotel.name] = '/placeholder.jpg'; // Fallback to placeholder
               }

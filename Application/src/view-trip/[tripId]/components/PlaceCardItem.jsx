@@ -11,7 +11,7 @@ function PlaceCardItem({ place }) {
         const textSearchResponse = await fetch(
           `https://maps.gomaps.pro/maps/api/place/textsearch/json?query=${encodeURIComponent(
             place.name
-          )}&key=AlzaSy8-8qoDtDuBJLb891NTWMf2lsfSI9n701W`
+          )}&key=AlzaSyJtry_56mqgmBOERW22Nn-omfuLQdeiezJ`
         );
 
         const textSearchData = await textSearchResponse.json();
@@ -21,7 +21,7 @@ function PlaceCardItem({ place }) {
 
         if (photoReference) {
           // Construct the Photo API URL
-          const photoApiUrl = `https://maps.gomaps.pro/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=400&key=AlzaSy8-8qoDtDuBJLb891NTWMf2lsfSI9n701W`;
+          const photoApiUrl = `https://maps.gomaps.pro/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=400&key=AlzaSyJtry_56mqgmBOERW22Nn-omfuLQdeiezJ`;
           setPhotoUrl(photoApiUrl);
         }
       } catch (error) {

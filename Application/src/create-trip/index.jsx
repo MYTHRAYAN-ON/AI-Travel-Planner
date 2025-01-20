@@ -15,7 +15,7 @@ function CreateTrip() {
   const [formData, setFormData] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   const [loading, setLoading] = useState(false);
-  const apiKey = 'AlzaSy8-8qoDtDuBJLb891NTWMf2lsfSI9n701W';
+  const apiKey = 'AlzaSyJtry_56mqgmBOERW22Nn-omfuLQdeiezJ';
   const navigate = useNavigate();
 
   const handlePlaceChange = async (e) => {
